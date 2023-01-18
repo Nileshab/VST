@@ -1,0 +1,6 @@
+	with cte as	
+		(select team1  from vst
+		union all
+		select team2 from vst)
+select * from cte
+
